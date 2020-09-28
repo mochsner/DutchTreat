@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "cGDyNMJiu291gn56XKnplkwVLfkbgMBRUONUtByE08svvNLQvNQ/n8fXDyvK/by1cUrKdhOo4D8vbHKOw09Yew==",
+  "dgSpecHash": "8hcdEYfaAxDJLxRaWiJ1kQ7KO2D6TTioC2ZPgnhEZQGoI8cP6wbor5r5qEY2r+hRPfHvZbRYqBt8GpCwBHdCqw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Owner\\Source\\Repos\\DutchTreat\\DutchTreat\\DutchTreat.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Owner\\.nuget\\packages\\odetocode.usenodemodules\\3.0.0\\odetocode.usenodemodules.3.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

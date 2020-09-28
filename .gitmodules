@@ -1,0 +1,3 @@
+[submodule "BuildingASPNETCore2"]
+	path = BuildingASPNETCore2
+	url = https://github.com/psauthor/BuildingASPNETCore2
