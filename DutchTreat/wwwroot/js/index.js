@@ -1,18 +1,27 @@
-﻿var x = 0;
-var s = "";
+﻿$(document).ready(function () {
+    var x = 0;
+    var s = "";
 
-alert("hello pluralsight");
+    alert("hello pluralsight");
 
 
-var theForm = document.getElementById("theForm");
-theForm.hidden = true;
+    var theForm = $("theForm");
+    theForm.hide();
 
-var button = document.getElementById("buyButton");
-button.addEventListener("click", function () {
-    alert("Buying item");
+    var button = $("#buyButton");
+    button.on("click", function () {
+        console.log("buying item");
+    });
+
+    let productInfo = $(".product-props li");
+    productInfo.on("click", function () {
+        console.log("You clicked on " + $(this).text());
+    })
+
+    var $loginToggle = $("#loginToggle");
+    var $popupForm = $(".popup-form");
+
+    $loginToggle.on("click", function () {
+        $popForm.slideToggle();
+    });
 });
-
-var productInfo = document.getElementsByClassName("product-props");
-var listItems = productInfo.item[0].children;
-
-
