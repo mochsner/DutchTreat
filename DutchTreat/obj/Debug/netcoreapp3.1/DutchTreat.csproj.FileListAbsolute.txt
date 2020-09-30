@@ -22,3 +22,13 @@ C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\DutchT
 C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\bin\Debug\netcoreapp3.1\OdeToCode.UseNodeModules.dll
 C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\DutchTreat.csproj.CopyComplete
 C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\bin\Debug\netcoreapp3.1\package-lock.json
+C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\bin\Debug\netcoreapp3.1\DutchTreat.Views.dll
+C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\bin\Debug\netcoreapp3.1\DutchTreat.Views.pdb
+C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\DutchTreat.RazorAssemblyInfo.cache
+C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\DutchTreat.RazorAssemblyInfo.cs
+C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\DutchTreat.TagHelpers.input.cache
+C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\DutchTreat.TagHelpers.output.cache
+C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\DutchTreat.RazorCoreGenerate.cache
+C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\Razor\Controllers\Views\App\Index.cshtml.g.cs
+C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\DutchTreat.RazorTargetAssemblyInfo.cs
+C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\DutchTreat.Views.pdb
