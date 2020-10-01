@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Dutch Treat: @ViewBag.Title</title>
-    <style href="~/css/site.css" rel="stylesheet"></style>
+    <link href="~/css/site.css" rel="stylesheet" />
 </head>
 <body>
     <header>Welcome to Dutch Treat</header>
@@ -13,6 +13,10 @@
             <li><a href="/app/about">About</a></li>
         </ul>
     </menu>
+    <section>
+        <h2>@ViewBag.Title</h2>
+        @RenderBody()
+    </section>
     <footer>Copyright 2017 Dutch Treat LLC</footer>
 
     <script src="~/node_modules/jquery/dist/jquery.min.js"></script>

@@ -1,9 +1,4 @@
 ﻿$(document).ready(function () {
-    var x = 0;
-    var s = "";
-
-    alert("hello pluralsight");
-
 
     var theForm = $("theForm");
     theForm.hide();
