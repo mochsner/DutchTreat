@@ -1,4 +1,5 @@
-﻿using DutchTreat.ViewModels;
+﻿using DutchTreat.Data;
+using DutchTreat.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -12,14 +13,17 @@ namespace DutchTreat.Controllers
     public class AppController : Controller
     {
         private readonly IMailService _mailService;
+        private readonly DutchContext _ctx;
 
-        public AppController(IMailService mailService)
+        public AppController(IMailService mailService, DutchRepository _ctx)
         {
             _mailService = mailService;
+            _ctx = ctx;
         }
 
         public IActionResult Index()
         {
+            var results = _ctx.Products.ToList();
             return View();
         }
 
@@ -50,6 +54,15 @@ namespace DutchTreat.Controllers
         {
             ViewBag.Title = "About Us";
             return View();
+        }
+
+        public IActionResult Shop()
+        {
+            var results = from p in _ctx.Products
+                          orderby p.Category
+                          select p;
+
+            return View(results.ToList());
         }
     }
 }
