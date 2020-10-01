@@ -1,8 +1,9 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<div class="col-md-6">
     <div class="product-info">
-        <img src="~/img/VanGogh.jpg"/>
+        <img src="~/img/VanGogh.jpg" />
         <h3>Mug</h3>
         <ul>
             <li>Price: $9.99</li>
@@ -10,8 +11,9 @@
             <li>Title:</li>
             <li>Description: Self-portratir</li>
         </ul>
-        <button id="buyButton">Buy</button>
+        <button id="buyButton" class="btn btn-success">Buy</button>
     </div>
+
 
 
     <div>
@@ -19,11 +21,11 @@
         <form class="popup-form">
             <div>
                 <label>Username</label>
-                <input/>
+                <input />
             </div>
             <div>
                 <label>Password</label>
-                <input type="password"/>
+                <input type="password" />
             </div>
             <div>
                 <input type="checkbox" />
@@ -34,3 +36,7 @@
             </div>
         </form>
     </div>
+
+</div>
+
+<div class="col-md-3">This is the other div.</div>
