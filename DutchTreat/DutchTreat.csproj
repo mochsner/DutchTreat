@@ -9,11 +9,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\index.html" />
+    <PackageReference Include="OdeToCode.UseNodeModules" Version="3.0.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="OdeToCode.UseNodeModules" Version="3.0.0" />
+    <Content Update="Controllers\Views\App\Index.cshtml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
   </ItemGroup>
 
 </Project>

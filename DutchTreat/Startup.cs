@@ -31,16 +31,25 @@ namespace DutchTreat
                 // Add Error Page
             }
             app.UseDeveloperExceptionPage();
+
             app.UseStaticFiles();
             app.UseNodeModules();
 
             app.UseRouting();
+
             app.UseEndpoints(cfg =>
             {
-            cfg.MapControllerRoute("Fallback",
-                "{controller}/{action}/{id?}",
-                new { controller = "App", action = "Index" });
+                cfg.MapControllerRoute("Fallback",
+                    "{controller}/{action}/{id?}",
+                    new { controller = "App", action = "Index" });
             });
+
+            //app.UseMvc(cfg =>
+            //{
+            //    cfg.MapRoute("Default",
+            //    "{controller}/{action}/{id?}",
+            //    new { controller = "App", action = "Index" });
+            //});
         }
     }
 }

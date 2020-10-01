@@ -4,15 +4,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace DutchTreat.Controllers
 {
     public class AppController : Controller
     {
-        public IActionResult Index()
+        //public IActionResult Index()
+        //{
+        //    return View();
+        //}
+        public ActionResult Index()
         {
-            throw new InvalidOperationException();
+            return View();
+        }
 
+        public IActionResult Contact()
+        {
+            ViewBag.Title = "Contact Us";
+            return View();
+        }
+
+        public IActionResult About()
+        {
+            ViewBag.Title = "About Us";
             return View();
         }
     }
