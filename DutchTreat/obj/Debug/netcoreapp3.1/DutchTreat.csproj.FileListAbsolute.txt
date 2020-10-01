@@ -31,9 +31,11 @@ C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\DutchT
 C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\DutchTreat.RazorCoreGenerate.cache
 C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\DutchTreat.RazorTargetAssemblyInfo.cs
 C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\DutchTreat.Views.pdb
-C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\Razor\Controllers\Index.cshtml.g.cs
 C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\Razor\Views\App\About.cshtml.g.cs
 C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\Razor\Views\App\Contact.cshtml.g.cs
 C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\Razor\Views\App\Index.cshtml.g.cs
 C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
+C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs

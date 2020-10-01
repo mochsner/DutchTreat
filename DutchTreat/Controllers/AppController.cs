@@ -22,6 +22,12 @@ namespace DutchTreat.Controllers
             return View();
         }
 
+        [HttpPost("contact")]
+        public IActionResult Contact(ContactViewModel model)
+        {
+            return View();
+        }
+
         public IActionResult About()
         {
             ViewBag.Title = "About Us";

@@ -30,6 +30,7 @@ namespace DutchTreat
             else
             {
                 // Add Error Page
+                app.UseExceptionHandler("/error");
             }
             app.UseDeveloperExceptionPage();
 
