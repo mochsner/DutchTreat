@@ -11,6 +11,13 @@ namespace DutchTreat.Controllers
 {
     public class AppController : Controller
     {
+        private readonly IMailService _mailService;
+
+        public AppController(IMailService mailService)
+        {
+            _mailService = mailService;
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -28,7 +35,9 @@ namespace DutchTreat.Controllers
         {
             if (ModelState.IsValid)
             {
-                //Send email
+                _mailService.SendMessage("marc@ochsner.me", model.Subject, $"From: {model.Name} - {model.Email}, Message: {model.Message}");
+                ViewBag.UserMessage = "Mail sent!";
+                ModelState.Clear();
             }
             else
             {
