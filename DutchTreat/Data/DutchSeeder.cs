@@ -21,12 +21,12 @@ namespace DutchTreat.Data
             _ctx = ctx;
             _hosting = hosting;
         }
-        
+
         public void Seed()
         {
             _ctx.Database.EnsureCreated();
 
-            if (!_ctx.Products.Any())
+            //if (!_ctx.Products.Any())
             {
                 // Need to create sample data
                 var filepath = Path.Combine(_hosting.ContentRootPath, "Data/art.json");

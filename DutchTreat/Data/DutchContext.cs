@@ -12,7 +12,6 @@ namespace DutchTreat.Data
     {
         public DutchContext(DbContextOptions<DutchContext> options): base(options)
         {
-            
         }
 
         // Create properties

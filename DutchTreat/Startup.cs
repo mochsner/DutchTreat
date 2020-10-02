@@ -6,6 +6,7 @@ using DutchTreat.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
@@ -39,7 +40,12 @@ namespace DutchTreat
 
             services.AddScoped<IDutchRepository, DutchRepository>();
 
-            services.AddMvc();
+
+            // NOTE: Using .AddNewtonsoftJson (instead of .AddJsonOptions) due to Microsoft changes documented here: 
+            // https://stackoverflow.com/questions/58006152/net-core-3-not-having-referenceloophandling-in-addjsonoptions
+            services.AddMvc()
+                    .AddNewtonsoftJson(o => o.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+                //.SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

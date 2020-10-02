@@ -79,8 +79,11 @@ C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\bin\Debug\netcoreapp3.1\runtim
 C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.Design.dll
 C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
 C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\bin\Debug\netcoreapp3.1\config.json
-C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\DutchTreat.csproj.CoreCompileInputs.cache
-C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\DutchTreat.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\Razor\Views\App\Shop.cshtml.g.cs
 C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\bin\Debug\netcoreapp3.1\Data\art.json
+C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\DutchTreat.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\DutchTreat.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll

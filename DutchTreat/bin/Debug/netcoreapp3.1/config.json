@@ -4,5 +4,12 @@
 	},
 	"ConnectionStrings": {
 		"DutchConnectionString": "server=(localdb)\\ProjectsV13;Database=DutchtreatDb;Integrated Security=true;MultipleActiveResultSets=true;"
+	},
+	"Logging": {
+		"LogLevel": {
+			"Default": "Information",
+			"DutchTreat": "Information", /* this is redundant, since it's caught in the default, but shows how we could specify log level for custom logs */
+			"Microsoft": "Warning" /* for every log that starts with the word Microsoft, show only warnings */
+		}
 	}
 }
