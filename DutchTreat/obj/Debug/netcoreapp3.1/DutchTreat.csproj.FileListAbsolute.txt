@@ -83,3 +83,4 @@ C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\DutchT
 C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\DutchTreat.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\Razor\Views\App\Shop.cshtml.g.cs
+C:\Users\Owner\Source\Repos\DutchTreat\DutchTreat\bin\Debug\netcoreapp3.1\Data\art.json
