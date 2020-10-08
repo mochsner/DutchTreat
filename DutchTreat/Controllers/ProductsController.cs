@@ -25,6 +25,10 @@ namespace DutchTreat.Controllers
             _repository = repository;
             _logger = logger;
         }
+        
+        /*
+         * Doesn't matter what this function is called
+         */
         [HttpGet]
         [ProducesResponseType(200)]
         [ProducesResponseType(400)]
@@ -33,7 +37,10 @@ namespace DutchTreat.Controllers
             try
             {
                 return Ok(_repository.GetAllProducts());
-            }
+                /*
+                 * Ok is very useful to be able to translate a 200 to then return JSON, or whatever the requested type is
+                 */
+    }
             catch (Exception ex)
             {
                 _logger.LogError($"Failed to get products: {ex}");
