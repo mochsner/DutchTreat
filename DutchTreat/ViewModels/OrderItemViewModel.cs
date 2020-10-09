@@ -11,5 +11,16 @@ namespace DutchTreat.ViewModels
         public decimal UnitPrice { get; set; }
 
 
+        [Required]
+        public int ProductId { get; set; }
+
+
+        /* Copied below from Product.cs ENTITY to flatten Products into an OrderItem */
+        public string ProductCategory { get; set; }
+        public string ProductSize { get; set; }
+        public string ProductTitle { get; set; }
+        public string ProductArtist { get; set; }
+        public string ProductArtId { get; set; }
+
     }
 }
