@@ -1,4 +1,5 @@
-﻿using DutchTreat.Data;
+﻿using AutoMapper;
+using DutchTreat.Data;
 using DutchTreat.Data.Entities;
 using DutchTreat.ViewModels;
 using Microsoft.AspNetCore.Mvc;
@@ -16,19 +17,23 @@ namespace DutchTreat.Controllers
     {
         private readonly IDutchRepository _repository;
         private readonly ILogger<OrdersController> _logger;
+        private readonly IMapper _mapper;
 
-   
-        public OrdersController(IDutchRepository repository, ILogger<OrdersController> logger)
+        public OrdersController(IDutchRepository repository, 
+                                ILogger<OrdersController> logger,
+                                IMapper mapper)
         {
             _repository = repository;
             _logger = logger;
+            _mapper = mapper;
         }
 
+        [HttpGet]
         public IActionResult Get()
         {
             try
             {
-                return Ok(_repository.GetAllOrders());
+                return Ok(_mapper.Map<IEnumerable<Order>, IEnumerable<OrderViewModel>>(_repository.GetAllOrders()));
             } 
             catch (Exception ex)
             {
@@ -41,9 +46,10 @@ namespace DutchTreat.Controllers
         public IActionResult Get(int id)
         {
             try
+
             {
                 var order = _repository.GetOrderById(id);
-                if (order != null) return Ok(order);
+                if (order != null) return Ok(_mapper.Map<Order, OrderViewModel>(order));
                 else return NotFound();
             }
             catch (Exception ex)
@@ -55,35 +61,37 @@ namespace DutchTreat.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody]Order model)
+        public IActionResult Post([FromBody]OrderViewModel model)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-                    var newOrder = new Order()
-                    {
-                        OrderDate = model.OrderDate,
-                        OrderNumber = model.OrderNumber,
-                        Id = model.Id
-                    };
+                    //var newOrder = new Order()
+                    //{
+                    //    OrderDate = model.OrderDate,
+                    //    OrderNumber = model.OrderNumber,
+                    //    Id = model.Id
+                    //};
+                    var newOrder = _mapper.Map<OrderViewModel, Order>(model);
 
                     if (newOrder.OrderDate == DateTime.MinValue)
                     {
                         newOrder.OrderDate = DateTime.Now;
                     }
 
-                    _repository.AddEntity(model);
+                    _repository.AddEntity(newOrder);
                     if (_repository.SaveAll())
                     {
-                        var vm = new OrderViewModel()
-                        {
-                            OrderId = newOrder.Id,
-                            OrderDate = newOrder.OrderDate,
-                            OrderNumber = newOrder.OrderNumber
-                        };
+                        //var vm = new OrderViewModel()
+                        //{
+                        //    OrderId = newOrder.Id,
+                        //    OrderDate = newOrder.OrderDate,
+                        //    OrderNumber = newOrder.OrderNumber
+                        //};
+                        var vm = _mapper.Map<Order, OrderViewModel>(newOrder);
                         // For HTTP POST, we need to use created() instead of Ok() to give a 201 instead of 200
-                        return Created($"/api/orders/{vm.OrderId}", vm);
+                        return Created($"/api/orders/{newOrder.Id}", vm);
                     }
                 }
                 else
