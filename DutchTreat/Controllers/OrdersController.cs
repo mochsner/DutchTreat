@@ -67,12 +67,6 @@ namespace DutchTreat.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    //var newOrder = new Order()
-                    //{
-                    //    OrderDate = model.OrderDate,
-                    //    OrderNumber = model.OrderNumber,
-                    //    Id = model.Id
-                    //};
                     var newOrder = _mapper.Map<OrderViewModel, Order>(model);
 
                     if (newOrder.OrderDate == DateTime.MinValue)
@@ -83,12 +77,6 @@ namespace DutchTreat.Controllers
                     _repository.AddEntity(newOrder);
                     if (_repository.SaveAll())
                     {
-                        //var vm = new OrderViewModel()
-                        //{
-                        //    OrderId = newOrder.Id,
-                        //    OrderDate = newOrder.OrderDate,
-                        //    OrderNumber = newOrder.OrderNumber
-                        //};
                         var vm = _mapper.Map<Order, OrderViewModel>(newOrder);
                         // For HTTP POST, we need to use created() instead of Ok() to give a 201 instead of 200
                         return Created($"/api/orders/{newOrder.Id}", vm);
